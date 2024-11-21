@@ -1,0 +1,15 @@
+<div class="pet-container">
+    {{#each pets}}
+        <div class="pet-card">
+            <img src="{{this.imageUrl}}" alt="{{this.name}}" class="pet-image">
+            <div class="pet-info">
+                <h2>{{this.name}}</h2>
+                <p><strong>Species:</strong> {{this.species}}</p>
+                <p><strong>Breed:</strong> {{this.breed}}</p>
+                <p><strong>Age:</strong> {{this.age}} years</p>
+                <p><strong>Favorite Food:</strong> {{this.favoriteFood}}</p>
+                <p class="description">{{this.description}}</p>
+            </div>
+        </div>
+    {{/each}}
+</div>
